@@ -137,11 +137,12 @@ tagged test data
 
 ## Accuracy measures on test set ##
 
-1   **=   .91** after 25 iterations on test set
-2.  **= __** after 50 iterations on test set
+1   **=   .91** after 20 iterations on test set
+2.  **=   .94** after 40 iterations on test set
 
 ## Accuracy measures on dev set ##
 
-1.
+1. **=  .95** after 20 iterations on dev set
+2. **=  .96** after 40 iteraions on dev set
 
 Note: this is a multiclass perceptron
