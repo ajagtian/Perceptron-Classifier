@@ -44,8 +44,8 @@ def	classify(text, g_hash):
 		predicted_class = max_score(score_hash)
 
 		return predicted_class.strip()
-					
 
+					
 def	main():
 		args = sys.argv[1:]
 		if(len(args) != 1):
