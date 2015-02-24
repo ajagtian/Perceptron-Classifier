@@ -5,6 +5,8 @@ import sys
 sys.path.insert(0, '../')
 import percepclassify
 import re
+import locale
+import io
 
 def	read_g_hash_from_file(model_file_name):
 		f = open(model_file_name, 'rU', errors = 'ignore')	
@@ -50,10 +52,22 @@ def	tag_text(test_text, g_hash):
 
 			PREV = CUR
 		
-		print(out_text)
 		return out_text
 		
 		
+def	tag_lines(lines, g_hash):
+		out_lines = []
+		for line in lines:
+			out_lines.append(tag_text(line, g_hash))
+	
+		return out_lines
+
+
+def	write_out_lines(lines):
+		for line in lines:
+			print(line)
+
+
 def	main():
 		args = sys.argv[1:]
 		if len(args) != 1:
@@ -61,9 +75,10 @@ def	main():
 			sys.exit(0)
 
 		
-		g_hash = read_g_hash_from_file(model_file_name)
-		test_text = input()
-		tag_text(test_text, g_hash)
+		g_hash = read_g_hash_from_file(args[0])
+		input_stream = io.TextIOWrapper(sys.stdin.buffer, errors='ignore')
+		test_lines = input_stream.readlines()	
+		write_out_lines(tag_lines(test_lines, g_hash))
 
 
 
