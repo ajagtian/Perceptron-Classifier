@@ -1,6 +1,8 @@
 ------------------------------------------------------------------------------------------------------------------------------------------
 # PART 1  - PERCEPTRON  IMPLEMENTATION #
 
+## THIS IMPLEMENTATION IS NOT AVERAGED PERCEPTRON BUT MULTICLASS PERCEPTRON ##
+
 ### perceplearn.py ###
 
 To create model file after learning from training data
@@ -54,7 +56,7 @@ or
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-# POS tagging #
+# PART II - POS tagging #
 
 ## Files ##
 
@@ -91,7 +93,7 @@ tagged output for the test set given
 ./postag.py <model_file>  <  test_file  >  outputfile 
 ```
 -------------------------------------------------------------------------------------------------------------------------------------------
-# NER #
+# PART III - NER #
 
 
 ## Files ##
@@ -128,3 +130,18 @@ tagged test data
 ./netag <model_file>  <  test_file  >  out_file
 ```
 -----------------------------------------------------------------------------------------------------------------------------------------
+
+# PART IV #
+
+## Accuracy of POS tagger ##
+
+## Accuracy measures on test set ##
+
+1   **=   .91** after 25 iterations on test set
+2.  **= __** after 50 iterations on test set
+
+## Accuracy measures on dev set ##
+
+1.
+
+Note: this is a multiclass perceptron
