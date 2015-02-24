@@ -137,9 +137,9 @@ tagged test data
 
 ## Accuracy measures on test set ##
 
-1   **=   .91** after 20 iterations on test set
+1. **=   .91** after 20 iterations on test set
 
-2.  **=   .94** after 40 iterations on test set
+2. **=   .94** after 40 iterations on test set
 
 ## Accuracy measures on dev set ##
 
