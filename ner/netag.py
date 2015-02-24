@@ -31,8 +31,7 @@ def	tag_word(word, clazz):
 		return word + '/' + clazz
 
 
-def	tag_text(test_text, model_file_name):
-		g_hash = read_g_hash_from_file(model_file_name)
+def	tag_text(test_text, g_hash):
 		words = re.findall(r'(\S+)', test_text)
 		PREV = 'BOS'
 		out_text = ''
@@ -52,6 +51,7 @@ def	tag_text(test_text, model_file_name):
 			PREV = CUR
 		
 		print(out_text)
+		return out_text
 		
 		
 def	main():
@@ -59,8 +59,11 @@ def	main():
 		if len(args) != 1:
 			print('usage: ./netag.py <model_file>')
 			sys.exit(0)
+
+		
+		g_hash = read_g_hash_from_file(model_file_name)
 		test_text = input()
-		tag_text(test_text, args[0])
+		tag_text(test_text, g_hash)
 
 
 
