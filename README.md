@@ -196,6 +196,7 @@ f_score: 0.8182941903584673
 #!python
 
 CLASS: I-PER
+
 precision: 0.7590221187427241
 recall: 0.9731343283582089
 f_score: 0.8528449967298888
@@ -219,6 +220,7 @@ f_score: 0.629193109700816
 #!python
 
 CLASS: I_ORG
+
 precision: 0.7715959004392386
 recall: 0.6214622641509434
 f_score: 0.6884389288047028
@@ -250,14 +252,14 @@ recall: 0.7728285077951003
 f_score: 0.629193109700816
 ```
 
-## Overall statistic for NER ##
+## Overall statistics for NER ##
 
 
 ```
 #!python
 
-**Overall F score:  .76**
-**Accuracy: .95**
+Overall F score:  .76
+Accuracy: .95
 ```
 
 ## (3) Using Naive Bayes Classifier instead of perceptron ##
