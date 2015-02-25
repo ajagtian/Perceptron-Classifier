@@ -133,12 +133,31 @@ tagged test data
 
 # PART IV #
 
-## Accuracy of POS tagger ##
-
-## Accuracy measures on dev set ##
+## (1) Accuracy of POS tagger on dev set ##
 
 1. **=  .94** after 20 iterations on dev set
 
 2. **=  .96** after 40 iteraions on dev set
 
 Note: this is a multiclass perceptron
+
+## (3) Using Naive Bayes Classifier instead of perceptron ##
+
+When Naive Bayes classifies was used for POS tagging instead of perceptron. Following were the observations.
+
+### Accuracy of tagging DEV set: ###
+
+* Accuracy of tagging POS for dev set was **reduced to .63 from .94**
+
+* The reason for such a low score on accuracy level for Naive Bayes classification is arguably due to the independence assumption of Naive Bayes. Naive Bayes does not take into consideration the context a word (PREVIOUS, CURRENT, NEXT) as good as perceptron, and hence gives less accuracy on tagging.
+
+* Also  perceptron is trained by many more iterations as compared to Naive Bayes, so it is also a contributing factor, more training = better classification.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Naive bayes implementation for POS tagging is at - 
+```
+#!python
+
+/postagging/nb_test/
+```
