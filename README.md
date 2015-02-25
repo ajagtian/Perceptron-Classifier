@@ -60,7 +60,7 @@ or
 
 ## Files ##
 
-### postraing.py ###
+### postrain.py ###
 
 Uses **perceplearn.py** to create model file from part of speech training data
 
@@ -135,9 +135,9 @@ tagged test data
 
 ## (1) Accuracy of POS tagger on dev set ##
 
-1. **=  .94** after 20 iterations on dev set
+1. **=  .94** after 20 iterations of training
 
-2. **=  .96** after 40 iteraions on dev set
+2. **=  .96** after 40 iteraions of training
 
 Note: this is a multiclass perceptron
 
