@@ -135,15 +135,9 @@ tagged test data
 
 ## Accuracy of POS tagger ##
 
-## Accuracy measures on test set ##
-
-1. **=   .91** after 20 iterations on test set
-
-2. **=   .94** after 40 iterations on test set
-
 ## Accuracy measures on dev set ##
 
-1. **=  .95** after 20 iterations on dev set
+1. **=  .94** after 20 iterations on dev set
 
 2. **=  .96** after 40 iteraions on dev set
 
